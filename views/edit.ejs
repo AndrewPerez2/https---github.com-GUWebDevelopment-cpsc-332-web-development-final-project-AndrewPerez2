@@ -1,0 +1,80 @@
+<!-- GU CPSC 332 Example Edit Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Account</title>
+    <style>
+        body{
+            background-color: #dbdbdb;
+            margin-top: 10%;
+        }
+        h2{
+            width: 500px;
+            margin:auto;
+        }
+        input{
+            border-radius: 20px;
+            font-size: x-large;
+            padding-left: 10px;
+        }
+        button{
+            border-radius: 20px;
+            font-size: large;
+            padding-left: 10px; 
+        }
+        p{
+            width: 500px;
+            margin:auto;
+        }
+        table,
+        th {
+            width: 600px;
+            height: 200px;
+            margin:auto;
+            font-size: xx-large;
+            background-color: white;
+            border-radius: 20px;
+            border: 0px;
+            box-shadow: 0 6px 15px rgb(0 0 0 / 0.2);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Edit</h2>
+    <% //debugger; %>
+    <form action="/edit" method="POST">
+        <table>
+            <tr>
+                <td id="username">
+                    <input type="text" placeholder="new username" name="username">
+                </td>
+            </tr>
+            <tr>
+                <td id="password">
+                    <input type="password" placeholder="new password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td id="passwordConf">
+                    <input type="password" name="passwordConf" placeholder="Retype Password">
+                </td>
+            </tr>
+        </table>
+        <p>
+            <button type="submit">Edit (Save Changes)</button>
+        </p>
+        <p>
+            <button><a href="/delete">Delete Account</a></button>
+        </p>
+        <p>
+            <button><a href="/">Back</a></button>
+        </p>
+    </form>
+</body>
+
+</html>

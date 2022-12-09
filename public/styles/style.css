@@ -1,0 +1,253 @@
+/* full body stule */
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* text and color on body alone */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(40, 0, 240, 0.609);
+}
+
+/* inner memnu */
+.menu-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgba(52, 58, 64, 0.5);
+    line-height: 50px;
+    z-index: 999;
+
+}
+
+/* menu interaction with mouse */
+.menu-toggle:focus,
+.menu-toggle:hover {
+    color: #fff;
+}
+
+.menu-toggle:hover {
+    background: #343a40;
+}
+
+/* sidebar styling */
+#sidebar-wrapper {
+    z-index: 2;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transition: all 0.4s ease;
+    transform: translateX(250px);
+    background: #232346;
+    border-left: 1px solid gray;
+    position: fixed;
+}
+
+.sidebar-nav {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 250px;
+    list-style: none;
+}
+
+/* nav items styling */
+.sidebar-nav li.sidebar-nav-item a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background: gray;
+    padding: 15px;
+}
+
+/* nav items style when hover */
+.sidebar-nav li a:active,
+.sidebar-nav li a:hover,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+    color: #fff;
+    background: black;
+}
+
+
+.sidebar-nav>.sidebar-brand {
+    font-size: 1.2rem;
+    background: rgb(52, 58, 64, 0.1);
+    line-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    height: 80px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+    color: white;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+    color: white;
+    background: none;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    transition: all 0.4s ease 0s;
+}
+
+/* Home Page Screen */
+.hook {
+    min-height: 30rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: linear-gradient(90deg, black 0%, black 100%),
+        url("../images/colorisluv/kingrich.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 120px 100px 250px black, inset -120px -100px 250px black;
+}
+
+/* hook movie */
+.hook h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* header 3 hook */
+.hook .mb-5 em {
+    color: white;
+    text-transform: uppercase;
+}
+
+/* @media (min-width : 992px){
+    .hook{
+        height: 100vh;
+    }
+    .hook h1{
+        font-size: 5.5rem;
+    }
+} */
+.btn-x1 {
+    padding: 1.25rem 2.5rem;
+    text-transform: uppercase;
+    background-color: #ed425c;
+    border: none;
+    color: white;
+}
+
+.btn-x1:hover {
+    background-color: #fd3a69;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+/* Container for list of movies*/
+.Container {
+    margin: 2% 2% 0 3%;
+}
+
+/* Movie images styling */
+.Movies img {
+    margin-right: 1%;
+    margin-bottom: 10%;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: -4px 4px 5px 0 black;
+    transition: 0.8s;
+}
+
+/* movie images when hover*/
+.Movies img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* Header in each container for each subgenre of movie */
+.Container h2 {
+    margin-bottom: 2%;
+    color: #4f13f4;
+
+}
+
+/* footer and contact styling */
+#footer {
+    background-color: #020314;
+    padding: 2% 15%;
+    color: #fff;
+    text-align: center;
+
+}
+
+/* social media icon styling */
+.social-icon {
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+/* social media icon when hover */
+.social-icon:hover {
+    color: cadetblue;
+}
+
+/* DropDaSmoke Footer name */
+.footername {
+    color: coral;
+}
+
+/* footer mouse hovers */
+.footername:hover {
+    text-decoration: none;
+    color: crimson;
+}
+
+/* scroll to top button bottom right styling */
+.scroll-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgba(52, 58, 64, 0.5);
+    line-height: 45px;
+    display: none;
+}
+
+/* Scroll to top when hover over menu */
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+    color: whitesmoke;
+}
+
+.scroll-to-top:hover {
+    background: #343a40
+}
+
+.scroll-to-top i {
+    font-weight: 800;
+}

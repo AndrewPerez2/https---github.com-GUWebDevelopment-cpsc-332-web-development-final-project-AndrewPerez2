@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>User Log In</title>
+
+    <style>
+        body{
+            background-color: #dbdbdb;
+            margin-top: 10%;
+        }
+        fieldset{
+            width: 500px;
+            margin:auto;
+            font-size: xx-large;
+            background-color: white;
+            border-radius: 20px;
+            border: 0px;
+            box-shadow: 0 6px 15px rgb(0 0 0 / 0.2);
+        }
+        input{
+            border-radius: 20px;
+            font-size: x-large;
+            padding-left: 10px;
+        }
+        button{
+            border-radius: 20px;
+            font-size: large;
+            padding-left: 10px; 
+        }
+        #username-error {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="/login" method="POST">
+        <fieldset>
+            <div>Log In</div>
+            <button><a href="/">Back</a></button>
+            <p>
+                <label for="username">Username</label>
+                <!-- <input type="text" name="username" id="username" value="bsmith"> -->
+                <input type="text" name="username" id="username" placeholder="Enter a username">
+                <span id="username-error">
+                    <% if(usernameError.length > 0) { %>
+                    Error: <%= usernameError %>
+                    <% } %>
+                </span>
+            </p>
+
+            <p>
+                <label for="password">Password</label>
+                <!-- <input type="password" name="password" id="password" value="abc123"> -->
+                <input type="password" name="password" id="password" placeholder="Enter a password">
+            </p>
+
+            <p>Don't have an account? <a href="/register">Register</a></p>
+
+            <input type="submit" value="Log In">
+        </fieldset>
+    </form>
+</body>
+
+</html>

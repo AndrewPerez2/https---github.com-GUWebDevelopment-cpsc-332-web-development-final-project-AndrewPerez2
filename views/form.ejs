@@ -1,0 +1,70 @@
+<!-- GU CPSC 332 Example Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    <link rel="icon" href="favicon.png">
+    <style>
+        body{
+            background-color: #dbdbdb;
+            margin-top: 10%;
+        }
+        h1{
+            width: 500px;
+            margin:auto;
+        }
+        legend{
+            background-color: white;
+            border-radius: 20px;
+        }
+        fieldset{
+            width: 500px;
+            margin:auto;
+            font-size: xx-large;
+            background-color: white;
+            border-radius: 20px;
+            border: 0px;
+            box-shadow: 0 6px 15px rgb(0 0 0 / 0.2);
+        }
+        input{
+            border-radius: 20px;
+            font-size: x-large;
+            padding-left: 10px;
+        }
+        button{
+            border-radius: 20px;
+            font-size: large;
+            padding-left: 10px; 
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Reach out to DROPDASMOKETV</h1>
+    <!-- <img src="icee.jpg"
+                    alt="Shamelessly stolen from https://i.kym-cdn.com/photos/images/original/000/000/601/C6QJPRHW4QF6KFDP7XJNW24TNDI4YNF2.jpg"> -->
+
+    <form action="/form" method="POST">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <button><a href="/">Back</a></button>
+            <p>
+                <label for="username">User Name:</label>
+                <input type="text" name="username" id="username" value="<%= username %>">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea type="text" name="message" id="message" rows="10" cols="50"></textarea>
+            </p>
+            <input type="submit" value="Send message">
+        </fieldset>
+    </form>
+</body>
+
+</html>

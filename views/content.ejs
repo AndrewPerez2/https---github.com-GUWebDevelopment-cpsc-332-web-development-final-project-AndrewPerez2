@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title><%=title%></title>
+    <style>
+        body{
+            background-color: #dbdbdb;
+            margin-top: 10%;
+            margin:auto;
+        }
+        input{
+            border-radius: 20px;
+            font-size: x-large;
+            padding-left: 10px;
+        }
+        button{
+            border-radius: 20px;
+            font-size: large;
+            padding-left: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <button><a href="/index">Back</a></button>
+    <h1><%=title%></h1>
+    <h2><%=year%> ⋅ <%=rating%> ⋅ <%=time%></h2>
+    <h2><%=director%> </h2>
+    <div>
+        <img src="/images/<%=img%>" height="400px">
+        <div style="font-size:30px;"><%=summary%></div>
+        <video width="1024" controls>
+            <source src="/trailers/<%=video%>" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+</body>
+
+</html>
